@@ -59,7 +59,7 @@ export default function Hero() {
           className="flex justify-center"
         >
           <img
-            src="/images/hero/kids.png"  // ✅ FIXED PATH
+            src= "/images/kids.png"  // ✅ FIXED PATH
             alt="Kids Learning"
             className="w-full max-w-md rounded-3xl shadow-2xl border-4 border-white object-cover"
           />

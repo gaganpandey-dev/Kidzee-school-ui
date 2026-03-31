@@ -16,7 +16,7 @@ export default function About() {
           className="flex justify-center"
         >
           <img
-            src="/images/about.png"
+            src="/images/Gallery4.png"
             alt="About Preschool"
             className="rounded-2xl shadow-lg w-full max-w-md"
           />
