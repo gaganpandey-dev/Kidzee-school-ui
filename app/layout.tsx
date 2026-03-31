@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,6 +12,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// ✅ ADD THIS (VERY IMPORTANT FOR iOS)
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
+// ✅ METADATA (already good, just small upgrade)
 export const metadata: Metadata = {
   title: "Kidzee Virgonagar Preschool | Best Preschool in Bengaluru",
   description:
