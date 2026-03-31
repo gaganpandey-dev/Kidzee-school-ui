@@ -26,4 +26,6 @@ body {
 }
 html {
   -webkit-text-size-adjust: 100%;
+}  html, body {
+  overflow-x: hidden;
 }

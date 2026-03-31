@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -58,9 +59,12 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="flex justify-center"
         >
-          <img
-            src= "/images/kids.png"  // ✅ FIXED PATH
+          <Image
+            src="/images/kids.png"  // ✅ make sure this exists
             alt="Kids Learning"
+            width={500}
+            height={400}
+            priority
             className="w-full max-w-md rounded-3xl shadow-2xl border-4 border-white object-cover"
           />
         </motion.div>
