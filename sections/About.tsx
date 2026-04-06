@@ -164,7 +164,7 @@ export default function About() {
           <div>
             <a
               href="#contact"
-              className="inline-block bg-yellow-400 text-black px-7 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition font-[var(--font-fredoka)]"
+              className="inline-block bg-yellow-200 text-black px-7 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition font-[var(--font-fredoka)]"
             >
               🎓 Schedule a Visit
             </a>

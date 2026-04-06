@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-indigo-600 via-pink-500 to-yellow-400 text-white pt-12 pb-6 font-[var(--font-quicksand)]">
+    <footer className="bg-gradient-to-r from-indigo-300 via-pink-200 to-yellow-200 text-white pt-12 pb-6 font-[var(--font-quicksand)]">
 
       <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-4 gap-10">
 
@@ -36,7 +36,7 @@ export default function Footer() {
             href="https://maps.app.goo.gl/NoLk1uoME95T4aHu6"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-3 bg-white text-indigo-600 px-4 py-2 rounded-lg text-sm font-semibold shadow hover:scale-105 transition font-[var(--font-fredoka)]"
+            className="inline-block mt-3 bg-white text-indigo-200 px-4 py-2 rounded-lg text-sm font-semibold shadow hover:scale-105 transition font-[var(--font-fredoka)]"
           >
             📍 Open in Google Maps
           </a>
@@ -49,10 +49,10 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-2 text-white/90">
-            <li><a href="#about" className="hover:text-yellow-200 transition">About Us</a></li>
-            <li><a href="#programs" className="hover:text-yellow-200 transition">Our Programs</a></li>
-            <li><a href="#gallery" className="hover:text-yellow-200 transition">Gallery</a></li>
-            <li><a href="#contact" className="hover:text-yellow-200 transition">Contact</a></li>
+            <li><a href="#about" className="hover:text-yellow-100 transition">About Us</a></li>
+            <li><a href="#programs" className="hover:text-yellow-100 transition">Our Programs</a></li>
+            <li><a href="#gallery" className="hover:text-yellow-100 transition">Gallery</a></li>
+            <li><a href="#contact" className="hover:text-yellow-100 transition">Contact</a></li>
           </ul>
         </div>
 
@@ -66,7 +66,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3">
               <Phone size={18} />
-              <a href="tel:8088042991" className="hover:text-yellow-200 transition">
+              <a href="tel:8088042991" className="hover:text-yellow-100 transition">
                 8088042991
               </a>
             </div>
@@ -76,7 +76,7 @@ export default function Footer() {
               <a
                 href="https://www.facebook.com/KidzeeIndia"
                 target="_blank"
-                className="hover:text-yellow-200 transition"
+                className="hover:text-yellow-100 transition"
               >
                 KidzeeIndia
               </a>
@@ -87,7 +87,7 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/kidzeeindia"
                 target="_blank"
-                className="hover:text-yellow-200 transition"
+                className="hover:text-yellow-100 transition"
               >
                 kidzeeindia
               </a>

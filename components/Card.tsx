@@ -30,7 +30,7 @@ export default function Card({
 
       {/* Decorative Circle */}
       {gradient && (
-        <div className="absolute top-[-20px] right-[-20px] w-24 h-24 bg-white/20 rounded-full"></div>
+        <div className="absolute -top-5 -right-5 w-24 h-24 bg-white/20 rounded-full"></div>
       )}
 
       {/* ICON */}

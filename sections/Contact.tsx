@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 bg-gradient-to-r from-indigo-500 via-pink-400 to-yellow-300 font-[var(--font-quicksand)]"
+      className="py-24 bg-gradient-to-r from-indigo-500 via-pink-400 to-yellow-100 font-[var(--font-quicksand)]"
     >
       <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
 
@@ -80,7 +80,7 @@ export default function Contact() {
                 name="parentName"
                 type="text"
                 placeholder="Parent Name"
-                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-300"
+                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-100"
                 required
               />
 
@@ -88,7 +88,7 @@ export default function Contact() {
                 name="childName"
                 type="text"
                 placeholder="Child Name"
-                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-300"
+                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-100"
                 required
               />
 
@@ -96,7 +96,7 @@ export default function Contact() {
                 name="phone"
                 type="tel"
                 placeholder="Phone Number"
-                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-300"
+                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-100"
                 required
               />
 
@@ -104,18 +104,18 @@ export default function Contact() {
                 name="email"
                 type="email"
                 placeholder="Email"
-                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-300"
+                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-100"
               />
 
               <textarea
                 name="message"
                 placeholder="Your Message"
-                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-300"
+                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-100"
               />
 
               <button
                 type="submit"
-                className="w-full bg-yellow-300 hover:bg-yellow-400 py-3 rounded-full font-semibold shadow-md transition font-[var(--font-fredoka)]"
+                className="w-full bg-yellow-200 hover:bg-yellow-200 py-3 rounded-full font-semibold shadow-md transition font-[var(--font-fredoka)]"
               >
                 Submit Enquiry 🚀
               </button>

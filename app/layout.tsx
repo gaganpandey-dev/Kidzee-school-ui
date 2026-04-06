@@ -80,7 +80,7 @@ export default function RootLayout({
         h-full antialiased scroll-smooth
       `}
     >
-      <body className="min-h-full flex flex-col selection:bg-yellow-300 selection:text-black font-[var(--font-quicksand)]">
+      <body className="min-h-full flex flex-col selection:bg-yellow-200 selection:text-black font-[var(--font-quicksand)]">
         {children}
       </body>
     </html>

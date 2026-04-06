@@ -22,9 +22,9 @@ export default function Button({
     "px-6 py-3 rounded-full font-semibold shadow-md transition duration-300 hover:scale-105 active:scale-95";
 
   const variants = {
-    primary: "bg-yellow-300 hover:bg-yellow-400 text-gray-900",
-    secondary: "bg-white text-indigo-600 hover:bg-gray-100",
-    whatsapp: "bg-green-500 hover:bg-green-600 text-white",
+    primary: "bg-yellow-200 hover:bg-yellow-200 text-gray-800",
+    secondary: "bg-white text-indigo-400 hover:bg-gray-100",
+    whatsapp: "bg-green-400 hover:bg-green-300 text-white",
   };
 
   const style = `${baseStyle} ${variants[variant]} ${className}`;

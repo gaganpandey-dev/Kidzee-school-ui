@@ -76,10 +76,10 @@ export default function Navbar() {
             <button
               key={index}
               onClick={() => handleScroll(link.href)}
-              className="relative group transition hover:text-indigo-600 text-sm font-[Fredoka]"
+              className="relative group transition hover:text-indigo-400 text-sm font-[Fredoka]"
             >
               {link.name}
-              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-indigo-500 transition-all group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-indigo-300 transition-all group-hover:w-full"></span>
             </button>
           ))}
 
@@ -87,7 +87,7 @@ export default function Navbar() {
             onClick={() => handleScroll("#contact")}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-5 py-1.5 rounded-full bg-yellow-400 text-black text-sm font-semibold shadow-md font-[Fredoka]"
+            className="px-5 py-1.5 rounded-full bg-yellow-200 text-black text-sm font-semibold shadow-md font-[Fredoka]"
           >
             🎓 Admissions 2026-27
           </motion.button>
@@ -139,7 +139,7 @@ export default function Navbar() {
             <motion.button
               onClick={() => handleScroll("#contact")}
               whileTap={{ scale: 0.95 }}
-              className="w-full bg-yellow-400 py-2.5 rounded-full font-semibold text-sm"
+              className="w-full bg-yellow-200 py-2.5 rounded-full font-semibold text-sm"
             >
               🎓 Start Admission 🚀
             </motion.button>
