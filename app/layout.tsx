@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Fredoka, Quicksand, Comic_Neue } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,14 +12,33 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// ✅ ADD THIS (VERY IMPORTANT FOR iOS)
+// 🔥 NEW FONTS
+const fredoka = Fredoka({
+  subsets: ["latin"],
+  variable: "--font-fredoka",
+  weight: ["400", "500", "600", "700"],
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  variable: "--font-quicksand",
+  weight: ["400", "500", "600"],
+});
+
+const comicNeue = Comic_Neue({
+  subsets: ["latin"],
+  variable: "--font-comic",
+  weight: ["400", "700"],
+});
+
+// ✅ VIEWPORT
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
 };
 
-// ✅ METADATA (already good, just small upgrade)
+// ✅ METADATA
 export const metadata: Metadata = {
   title: "Kidzee Virgonagar Preschool | Best Preschool in Bengaluru",
   description:
@@ -43,6 +62,7 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
 export default function RootLayout({
   children,
 }: {
@@ -51,9 +71,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
+      className={`
+        ${geistSans.variable} 
+        ${geistMono.variable} 
+        ${fredoka.variable} 
+        ${quicksand.variable} 
+        ${comicNeue.variable} 
+        h-full antialiased scroll-smooth
+      `}
     >
-      <body className="min-h-full flex flex-col selection:bg-yellow-300 selection:text-black">
+      <body className="min-h-full flex flex-col selection:bg-yellow-300 selection:text-black font-[var(--font-quicksand)]">
         {children}
       </body>
     </html>

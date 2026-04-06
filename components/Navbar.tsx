@@ -22,10 +22,10 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 w-full h-[64px] z-50 bg-white/70 backdrop-blur-xl shadow-sm border-b border-white/20">
+    <header className="fixed top-0 w-full h-[64px] z-50 bg-white/70 backdrop-blur-xl shadow-sm border-b border-white/20 font-[Quicksand]">
       <div className="max-w-7xl mx-auto px-5 py-1 flex justify-between items-center h-full">
 
-        {/* 🔥 LOGO FINAL (COMPACT FIXED) */}
+        {/* 🔥 LOGO */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,7 +33,6 @@ export default function Navbar() {
         >
           <div className="flex flex-col items-center px-1 py-0">
 
-            {/* ✅ CURVED KIDZEE (SMALL + FIT) */}
             <svg width="160" height="65" viewBox="0 0 220 100">
               <path
                 id="curve"
@@ -47,6 +46,7 @@ export default function Navbar() {
                 fontWeight="900"
                 letterSpacing="2"
                 style={{
+                  fontFamily: "Fredoka",
                   filter: "drop-shadow(2px 2px 0px #FACC15)"
                 }}
               >
@@ -56,14 +56,12 @@ export default function Navbar() {
               </text>
             </svg>
 
-            {/* ✅ ADDRESS TIGHT */}
             <p className="text-[10px] text-purple-800 font-semibold text-center -mt-3">
               Virgonagar, Cheemasandra ✨
             </p>
 
           </div>
 
-          {/* FLOATING DOT */}
           <motion.div
             animate={{ y: [0, -5, 0], opacity: [1, 0.6, 1] }}
             transition={{ repeat: Infinity, duration: 2 }}
@@ -78,7 +76,7 @@ export default function Navbar() {
             <button
               key={index}
               onClick={() => handleScroll(link.href)}
-              className="relative group transition hover:text-indigo-600 text-sm"
+              className="relative group transition hover:text-indigo-600 text-sm font-[Fredoka]"
             >
               {link.name}
               <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-indigo-500 transition-all group-hover:w-full"></span>
@@ -89,7 +87,7 @@ export default function Navbar() {
             onClick={() => handleScroll("#contact")}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-5 py-1.5 rounded-full bg-yellow-400 text-black text-sm font-semibold shadow-md"
+            className="px-5 py-1.5 rounded-full bg-yellow-400 text-black text-sm font-semibold shadow-md font-[Fredoka]"
           >
             🎓 Admissions 2026-27
           </motion.button>
@@ -99,7 +97,6 @@ export default function Navbar() {
         {/* MOBILE MENU BUTTON */}
         <button
           onClick={() => setOpen(!open)}
-          onMouseEnter={() => setOpen(true)}
           className="md:hidden flex flex-col justify-center items-center gap-1"
         >
           <motion.span
@@ -125,7 +122,9 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden bg-white shadow-lg px-5 py-5 space-y-4"
+            onMouseEnter={() => setOpen(true)}
+            onMouseLeave={() => setOpen(false)}
+            className="md:hidden bg-white shadow-lg px-5 py-5 space-y-4 font-[Comic_Neue]"
           >
             {navLinks.map((link, index) => (
               <button

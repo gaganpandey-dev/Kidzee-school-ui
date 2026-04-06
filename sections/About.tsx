@@ -33,7 +33,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-24 bg-gradient-to-b from-[#fdfbff] via-[#f5f3ff] to-[#eef2ff]"
+      className="py-24 bg-gradient-to-b from-[#fdfbff] via-[#f5f3ff] to-[#eef2ff] font-[var(--font-quicksand)]"
     >
       <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-14 items-center">
 
@@ -73,7 +73,7 @@ export default function About() {
 
           {/* HEADING */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900 font-[var(--font-fredoka)]">
               A Joyful Place Where <br />
               <span className="text-purple-600">Young Minds Grow & Thrive 🌈</span>
             </h2>
@@ -94,32 +94,48 @@ export default function About() {
             <div className="flex items-start gap-3 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition">
               <ShieldCheck className="text-blue-500 mt-1" />
               <div>
-                <p className="font-semibold text-gray-900">Safe & Secure Campus</p>
-                <p className="text-sm text-gray-600">CCTV-monitored with a child-friendly infrastructure</p>
+                <p className="font-semibold text-gray-900 font-[var(--font-fredoka)]">
+                  Safe & Secure Campus
+                </p>
+                <p className="text-sm text-gray-600">
+                  CCTV-monitored with a child-friendly infrastructure
+                </p>
               </div>
             </div>
 
             <div className="flex items-start gap-3 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition">
               <Smile className="text-yellow-500 mt-1" />
               <div>
-                <p className="font-semibold text-gray-900">Joyful Learning Experience</p>
-                <p className="text-sm text-gray-600">Engaging, fun-based activities every day</p>
+                <p className="font-semibold text-gray-900 font-[var(--font-fredoka)]">
+                  Joyful Learning Experience
+                </p>
+                <p className="text-sm text-gray-600">
+                  Engaging, fun-based activities every day
+                </p>
               </div>
             </div>
 
             <div className="flex items-start gap-3 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition">
               <BookOpen className="text-green-500 mt-1" />
               <div>
-                <p className="font-semibold text-gray-900">Activity-Based Curriculum</p>
-                <p className="text-sm text-gray-600">Learning through play, art, and storytelling</p>
+                <p className="font-semibold text-gray-900 font-[var(--font-fredoka)]">
+                  Activity-Based Curriculum
+                </p>
+                <p className="text-sm text-gray-600">
+                  Learning through play, art, and storytelling
+                </p>
               </div>
             </div>
 
             <div className="flex items-start gap-3 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition">
               <Users className="text-pink-500 mt-1" />
               <div>
-                <p className="font-semibold text-gray-900">Experienced Educators</p>
-                <p className="text-sm text-gray-600">Caring, trained, and dedicated teachers</p>
+                <p className="font-semibold text-gray-900 font-[var(--font-fredoka)]">
+                  Experienced Educators
+                </p>
+                <p className="text-sm text-gray-600">
+                  Caring, trained, and dedicated teachers
+                </p>
               </div>
             </div>
 
@@ -148,7 +164,7 @@ export default function About() {
           <div>
             <a
               href="#contact"
-              className="inline-block bg-yellow-400 text-black px-7 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
+              className="inline-block bg-yellow-400 text-black px-7 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition font-[var(--font-fredoka)]"
             >
               🎓 Schedule a Visit
             </a>
