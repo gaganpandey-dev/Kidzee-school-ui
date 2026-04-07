@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 bg-gradient-to-r from-indigo-500 via-pink-400 to-yellow-100 font-[var(--font-quicksand)]"
+      className="py-24 bg-gradient-to-r from-indigo-300 via-pink-200 to-yellow-100 font-[var(--font-quicksand)]"
     >
       <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
 
@@ -46,13 +46,13 @@ export default function Contact() {
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="space-y-6 text-white"
+          className="space-y-6 text-gray-800"
         >
-          <h2 className="text-4xl font-extrabold font-[var(--font-fredoka)]">
+          <h2 className="text-4xl font-extrabold font-[var(--font-fredoka)] text-gray-900">
             Book Your Child’s Bright Future 🌟
           </h2>
 
-          <p className="text-white/90 text-lg">
+          <p className="text-gray-700 text-lg">
             Admissions for 2026 are now open. Limited seats available.
           </p>
 
@@ -71,7 +71,7 @@ export default function Contact() {
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="bg-white/20 backdrop-blur-lg p-6 rounded-3xl shadow-xl space-y-4 border border-white/30 font-[var(--font-quicksand)]"
+          className="bg-white/70 backdrop-blur-lg p-6 rounded-3xl shadow-xl space-y-4 border border-gray-200"
         >
 
           {!submitted ? (
@@ -80,7 +80,7 @@ export default function Contact() {
                 name="parentName"
                 type="text"
                 placeholder="Parent Name"
-                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-100"
+                className="w-full p-3 rounded-lg outline-none border border-gray-300 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-yellow-300"
                 required
               />
 
@@ -88,7 +88,7 @@ export default function Contact() {
                 name="childName"
                 type="text"
                 placeholder="Child Name"
-                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-100"
+                className="w-full p-3 rounded-lg outline-none border border-gray-300 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-yellow-300"
                 required
               />
 
@@ -96,7 +96,7 @@ export default function Contact() {
                 name="phone"
                 type="tel"
                 placeholder="Phone Number"
-                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-100"
+                className="w-full p-3 rounded-lg outline-none border border-gray-300 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-yellow-300"
                 required
               />
 
@@ -104,18 +104,18 @@ export default function Contact() {
                 name="email"
                 type="email"
                 placeholder="Email"
-                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-100"
+                className="w-full p-3 rounded-lg outline-none border border-gray-300 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-yellow-300"
               />
 
               <textarea
                 name="message"
                 placeholder="Your Message"
-                className="w-full p-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-100"
+                className="w-full p-3 rounded-lg outline-none border border-gray-300 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-yellow-300"
               />
 
               <button
                 type="submit"
-                className="w-full bg-yellow-200 hover:bg-yellow-200 py-3 rounded-full font-semibold shadow-md transition font-[var(--font-fredoka)]"
+                className="w-full bg-yellow-300 hover:bg-yellow-200 text-gray-900 py-3 rounded-full font-semibold shadow-md transition font-[var(--font-fredoka)]"
               >
                 Submit Enquiry 🚀
               </button>
@@ -124,15 +124,15 @@ export default function Contact() {
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
-              className="text-center text-white py-10"
+              className="text-center text-gray-800 py-10"
             >
-              <h3 className="text-3xl font-bold mb-3 font-[var(--font-fredoka)]">
+              <h3 className="text-3xl font-bold mb-3 font-[var(--font-fredoka)] text-gray-900">
                 🎉 Thank You!
               </h3>
               <p className="text-lg">
                 Your enquiry has been submitted successfully.
               </p>
-              <p className="text-sm mt-2">
+              <p className="text-sm mt-2 text-gray-600">
                 We will contact you soon 😊
               </p>
             </motion.div>

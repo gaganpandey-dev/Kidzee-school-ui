@@ -42,9 +42,9 @@ export default function Navbar() {
 
               <text
                 fill="#6B21A8"
-                fontSize="32"
-                fontWeight="900"
-                letterSpacing="2"
+                fontSize="60"
+                fontWeight="1000"
+                letterSpacing="3"
                 style={{
                   fontFamily: "Fredoka",
                   filter: "drop-shadow(2px 2px 0px #FACC15)"
@@ -56,7 +56,7 @@ export default function Navbar() {
               </text>
             </svg>
 
-            <p className="text-[10px] text-purple-800 font-semibold text-center -mt-3">
+            <p className="text-[12px] text-purple-800 font-semibold text-center -mt-3">
               Virgonagar, Cheemasandra ✨
             </p>
 
@@ -65,7 +65,7 @@ export default function Navbar() {
           <motion.div
             animate={{ y: [0, -5, 0], opacity: [1, 0.6, 1] }}
             transition={{ repeat: Infinity, duration: 2 }}
-            className="absolute right-0 top-1 w-2 h-2 bg-yellow-300 rounded-full"
+            className="absolute right-0 top-1 w-2 h-2 bg-yellow-400 rounded-full"
           />
         </motion.div>
 
@@ -76,10 +76,10 @@ export default function Navbar() {
             <button
               key={index}
               onClick={() => handleScroll(link.href)}
-              className="relative group transition hover:text-indigo-400 text-sm font-[Fredoka]"
+              className="relative group transition hover:text-indigo-500 text-sm font-[Fredoka]"
             >
               {link.name}
-              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-indigo-300 transition-all group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-indigo-500 transition-all group-hover:w-full"></span>
             </button>
           ))}
 
@@ -87,7 +87,7 @@ export default function Navbar() {
             onClick={() => handleScroll("#contact")}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-5 py-1.5 rounded-full bg-yellow-200 text-black text-sm font-semibold shadow-md font-[Fredoka]"
+          className="px-5 py-1.5 rounded-full bg-yellow-300 hover:bg-yellow-200 text-black text-sm font-semibold shadow-md transition font-[var(--font-fredoka)]"
           >
             🎓 Admissions 2026-27
           </motion.button>
@@ -130,19 +130,19 @@ export default function Navbar() {
               <button
                 key={index}
                 onClick={() => handleScroll(link.href)}
-                className="block text-gray-700 text-base"
+                className="block text-gray-800 text-base"
               >
                 {link.name}
               </button>
             ))}
 
             <motion.button
-              onClick={() => handleScroll("#contact")}
-              whileTap={{ scale: 0.95 }}
-              className="w-full bg-yellow-200 py-2.5 rounded-full font-semibold text-sm"
-            >
-              🎓 Start Admission 🚀
-            </motion.button>
+  onClick={() => handleScroll("#contact")}
+  whileTap={{ scale: 0.95 }}
+  className="w-full bg-yellow-200 text-black py-2.5 rounded-full font-semibold text-sm"
+>
+  🎓 Start Admission 2026-27
+</motion.button>
           </motion.div>
         )}
       </AnimatePresence>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-r from-indigo-200 via-pink-100 to-yellow-100 text-white font-[var(--font-quicksand)]">
+    <section className="relative min-h-screen flex items-start md:items-center pt-28 md:pt-0 overflow-hidden bg-gradient-to-r from-indigo-200 via-pink-100 to-yellow-100 font-[var(--font-quicksand)]">
 
       {/* Floating Shapes */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-purple-100 rounded-full blur-3xl opacity-30"></div>
@@ -20,30 +20,33 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="space-y-6 text-center md:text-left"
         >
-          {/* 🔥 HEADING → Fredoka */}
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight font-[var(--font-fredoka)]">
-            Where Little Minds <br />
-            <span className="text-yellow-200">
+          {/* ✅ FIXED HEADING */}
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight font-[var(--font-fredoka)]">
+            <span className="text-gray-800">
+              Where Little Minds
+            </span>
+            <br />
+            <span className="text-yellow-500">
               Grow Into Bright Futures 🌟
             </span>
           </h1>
 
-          {/* 🔥 BODY → Quicksand */}
-          <p className="text-lg md:text-xl text-white/90">
-            A joyful, safe and inspiring preschool where learning feels like play.
+          {/* BODY */}
+          <p className="text-lg md:text-xl">
+            <span className="text-gray-600">
+              A joyful, safe and inspiring preschool where learning feels like play.
+            </span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
 
-            {/* 🔥 BUTTON → Fredoka */}
             <a
               href="#contact"
               className="bg-white text-indigo-300 px-6 py-3 rounded-full font-semibold shadow-lg transition hover:scale-105 font-[var(--font-fredoka)]"
             >
-              Enrol Now 🚀
+              Enroll Now 🚀
             </a>
 
-            {/* 🔥 BUTTON → Fredoka */}
             <a
               href="https://wa.me/918088042991"
               target="_blank"
