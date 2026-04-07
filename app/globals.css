@@ -125,3 +125,29 @@ body {
 .font-comic {
   font-family: var(--font-comic), cursive;
 }
+/* 🔥 DARK YELLOW / AMBER GLOW (INSTANT) */
+.glow-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.glow-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  z-index: -1;
+  animation: glowPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 0px rgba(245, 158, 11, 0.0); /* amber */
+  }
+  40% {
+    box-shadow: 0 0 28px rgba(245, 158, 11, 0.9); /* 🔥 strong glow */
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(245, 158, 11, 0.0);
+  }
+}

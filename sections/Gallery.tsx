@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 const images = [
-  "/images/gallery5.png",
+ // poster
   "/images/kids.png",
   "/images/kidzee-gallery-a.png",
   "/images/kidzee-gallery-b.png",
@@ -36,7 +36,7 @@ export default function Gallery() {
           Explore how children learn, play, and grow in a fun and nurturing environment
         </p>
 
-        {/* 🔥 GRID */}
+        {/* GRID */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
           {images.map((src, index) => (
@@ -44,14 +44,18 @@ export default function Gallery() {
               key={index}
               className="relative w-full h-44 md:h-52 overflow-visible"
             >
-              {/* 🔥 HOVER CARD */}
               <div className="relative w-full h-full rounded-xl overflow-hidden shadow-md transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 hover:shadow-2xl">
 
                 <Image
                   src={src}
                   alt={`gallery-${index}`}
                   fill
-                  className="object-contain bg-white"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                  className={`${
+                    index === 0
+                      ? "object-contain bg-white"   // poster safe
+                      : "object-cover"
+                  }`}
                 />
 
                 {/* Overlay */}

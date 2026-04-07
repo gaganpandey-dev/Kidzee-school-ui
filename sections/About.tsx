@@ -15,7 +15,6 @@ export default function About() {
 
   const images = [
     "/images/gallery4.png",
-    "/images/kids.png",
     "/images/kidzee-gallery-a.png",
     "/images/kidzee-gallery-schl.png",
     "/images/kidzee-gallery-schl1.png"
@@ -23,12 +22,18 @@ export default function About() {
 
   const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+useEffect(() => {
+  if (images.length === 0) return;
+
+  const interval = setInterval(() => {
+    setIndex((prev) => {
+      const next = prev + 1;
+      return next >= images.length ? 0 : next;
+    });
+  }, 2000);
+
+  return () => clearInterval(interval);
+}, [images.length]);
 
   return (
     <section
@@ -161,15 +166,15 @@ export default function About() {
           </div>
 
           {/* CTA */}
-          <div>
-            <a
-              href="#contact"
-              className="inline-block bg-yellow-200 text-black px-7 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition font-[var(--font-fredoka)]"
-            >
-              🎓 Schedule a Visit
-            </a>
-          </div>
-
+       {/* CTA */}
+<div>
+  <a
+    href="#contact"
+    className="inline-block bg-yellow-200 text-black px-7 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition font-[var(--font-fredoka)] animate-glow"
+  >
+    🎓 Schedule a Visit
+  </a>
+</div>
         </motion.div>
       </div>
     </section>
